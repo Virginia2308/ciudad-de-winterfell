@@ -6,7 +6,7 @@
     
     /*Variables - son informacion que voy a reutilizar constantemente. Las variables van con dos "--"*/
 }
-
+/*Contenedores: body, nava, heder, a, etc. Todos son contenedores distintos.*/
 body {
     font-family: var(--fuente);
     font-size: 16px;
@@ -24,7 +24,18 @@ body {
     margin: 3rem;
     /*el margen por lo general es segun cantidad de rem o pixeles- preguntar al profe para centralizar imagenes.*/
 
-    
-
 
 }
+
+nav ul{
+    display: flex;  /* display - Lo convierte en un contenedor flexible (que va a poder cambiar de posicion) */
+    gap: 2rem; /* gap - es la separacion que puede haber entre un contenedor (li)y otro contenedor.*/
+    flex-direction: row; /* flex-direction - direccion que va a tener (fila, columna, etc)*/
+    justify-content:flex-start; /*justify-content - la posicion (si se encuentra a la iz, der, centrado)*/
+    list-style: none; /*list-style - le saca el puntito a la lista.*/
+}
+
+nav ul li a { 
+    text-decoration: none; /*Se supone que deberia de sacar el color azul, pero no funciono. Preguntar al profe.*/
+}
+
