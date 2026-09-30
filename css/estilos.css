@@ -1,0 +1,30 @@
+:root{
+    --colorprimario: #0f0d0de1;
+    --colorsecundario: #857e7e8c;
+
+    --fuente: "Domine", serif;
+    
+    /*Variables - son informacion que voy a reutilizar constantemente. Las variables van con dos "--"*/
+}
+
+body {
+    font-family: var(--fuente);
+    font-size: 16px;
+    /* font family es para definir la fuente que voy a tener
+        font size es el tamaño. Todo lo escrito en el body se reflejo en el cuerpo*/
+    line-height: 1.5;
+    /* line height Es el interlineado*/
+
+    background-color: var(--colorprimario);
+    /*Modificacion del color del fondo.*/
+
+    color: antiquewhite;
+    /*con solo escribir "color" se sabe que modifica el color de la fuente de toda la pagina.*/
+
+    margin: 3rem;
+    /*el margen por lo general es segun cantidad de rem o pixeles- preguntar al profe para centralizar imagenes.*/
+
+    
+
+
+}
