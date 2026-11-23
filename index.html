@@ -1,110 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ciudad de Winterfell</title>
-    <link rel="stylesheet" href="css/estilos.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
     <header>
-        <h1>Bienvenido a Winterfell</h1>
-        <p>Capital ancestral del Norte y hogar de la Casa Stark</p>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a target="_blank" href="ciudad.html">La Ciudad</a>
-                </li>
-                <li>
-                    <a target="_blank" href="lugares.html">Lugares de Interés</a>
-                </li>
-                <li>
-                    <a target="_blank" href="contacto.html">Contato y Turismo</a>
-                </li>
+      <h1>Bienvenido a Winterfell</h1>
+      <p>Capital ancestral del Norte y hogar de la Casa Stark</p>
+      <nav class="navbar navbar-expand bg-1">
+        <div class="container-fluid">
+          <div class="nav-overflow" data-bs-toggle="nav-overflow">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ciudad.html">La Ciudad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lugares.html">Lugares de Interes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html"
+                  >Contacto y Turismo</a
+                >
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    
-    <hr>
-    
+
+    <hr />
+
     <main>
-        <section id="Presentación">
-            <h2>Presentación de la Ciudad</h2>
-            <p> 
-                Winterfell es el corazón de la historia, cultural y político del Norte de Westeros.
-                Conocida por sus infraqueables murallas de piedra, sus aguas termales subterráneas
-                y su lema "Se acerca el invierno" "Winter is coming", esta fortaleza representa
-                la resistencia, el honor y la tradición de los hombres del Norte.
-            </p>
-            <img src="img/winterfell.jpg" width="1250" alt="Vista panóramica de Winterfell">
-        </section>    
+      <section id="Presentación">
+        <h2>Presentación de la Ciudad</h2>
+        <p>
+          Winterfell es el corazón de la historia, cultural y político del Norte
+          de Westeros. Conocida por sus infraqueables murallas de piedra, sus
+          aguas termales subterráneas y su lema "Se acerca el invierno" "Winter
+          is coming", esta fortaleza representa la resistencia, el honor y la
+          tradición de los hombres del Norte.
+        </p>
+        <img
+          src="img/winterfell.jpg"
+          width="1250"
+          alt="Vista panóramica de Winterfell"
+        />
+      </section>
 
-        <hr>
+      <hr />
 
-        <section id="lugares-destacados">
-            <h2>Atractivos y Lugares de Interés</h2>
-            <p>Descubre los rincones más icónicos de nuestra majestuosa ciudad:</p>
-            
-            <article>
-                <h3>El Bosque de los Dioses (Godswood)</h3>
-                <img src="img/bosque-de-los-dioses.jpg" width="1250" alt="Vista hacia el Bosque de Los Dioses">
-                <p>Un santuario de paz custodiado por el antiguo Árbol Corazón de rostro tallado.</p>
-            </article>
+      <section id="lugares-destacados">
+        <h2>Atractivos y Lugares de Interés</h2>
+        <p>Descubre los rincones más icónicos de nuestra majestuosa ciudad:</p>
+        <div>
+          <article class="card p-2" style="max-width: 320px">
+            <img
+              src="./img/bosque-de-los-dioses.jpg"
+              class="card-img-top"
+              alt="Vista del bosque de los dioses"
+            />
+            <div class="card-body">
+              <h3 class="card-title">El Bosque de los Dioses (Godswood)</h3>
+              <p class="card-text">
+                Un santuario de paz custodiado por el antiguo Árbol Corazón de
+                rostro tallado.
+              </p>
+            </div>
+            <a href="#">Leer mas..</a>
+          </article>
 
-            <article>
-                <h3>El Gran Salon (Great Hall)</h3>
-                <img src="img/gran-salon-de-winterfell.jpg" alt="Vista del Gran Salón de Winterfell">
-                <p>Centro de los grandes festines, juicios y asambleas de los señores del Norte. </p>
-            </article>
-            
-            <article>
-                <h3>Las Criptas de Winterfell</h3>
-                <img src="img/criptas-de-winterfell.jpg" alt="Vista de Las Criptas de Winterfell">
-                <p>Tumbas ancentrales bajo la fortaleza donde se encuentran los antiguos Reyes del Invierno.</p>
-            </article>
+          <article class="card p-2" style="max-width: 320px">
+            <img
+              src="./img/gran-salon-de-winterfell.jpg"
+              class="card-img-top"
+              alt="Vista del Gran Salon de winterfell"
+            />
+            <div class="card-body">
+              <h3 class="card-title">El Gran Salon (Great Hall)</h3>
+              <p class="card-text">
+                Centro de los grandes festines, juicios y asambleas de los
+                señores del Norte.
+              </p>
+            </div>
+            <a href="#">Leer mas..</a>
+          </article>
 
-            
-        </section>
-        
-        
-        <hr>
+          <article class="card p-2" style="max-width: 320px">
+            <img
+              src="./img/criptas-de-winterfell.jpg"
+              class="card-img-top"
+              alt="Vista de Las Criptas de Winterfell"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Las Criptas de Winterfell</h3>
+              <p class="card-text">
+                Tumbas ancentrales bajo la fortaleza donde se encuentran los
+                antiguos Reyes del Invierno.
+              </p>
+            </div>
+            <a href="#">Leer mas..</a>
+          </article>
+        </div>
+      </section>
 
-        <section id="agenda-cultural">
-            <h2>Agenda Cultural</h2>
+      <hr />
 
-            <aside>
-                <h3>Propuestas Culturales y Eventos Destacados</h3>
-                <ul>
-                    <li>
-                        <strong>Torneo del Guardián del Norte:</strong>Evento de arquería y justa entre las casas leales.
-                    </li>
-                    <li>
-                        <strong>Festival del Solsticio de Invierno:</strong>Celebración tradicional con música de bardos locales y banquetes.
-                    </li>
-                    <li>
-                        <strong>Mercado de la Ciudad de Invierno:</strong>Feria artesanal al pie de la muralla donde se ofrecen pieles, forja y alimentos locales.
-                    </li>
-                </ul>
-            
-            </aside>
+      <section id="agenda-cultural">
+        <h2>Agenda Cultural</h2>
 
-        </section>    
-
+        <aside>
+          <h3>Propuestas Culturales y Eventos Destacados</h3>
+          <ul>
+            <li>
+              <strong>Torneo del Guardián del Norte:</strong>Evento de arquería
+              y justa entre las casas leales.
+            </li>
+            <li>
+              <strong>Festival del Solsticio de Invierno:</strong>Celebración
+              tradicional con música de bardos locales y banquetes.
+            </li>
+            <li>
+              <strong>Mercado de la Ciudad de Invierno:</strong>Feria artesanal
+              al pie de la muralla donde se ofrecen pieles, forja y alimentos
+              locales.
+            </li>
+          </ul>
+        </aside>
+      </section>
     </main>
 
-    <hr>
+    <hr />
 
     <footer>
-        <p> 2026 Oficina de Turismo de Winterfell - Casa Stark. Todos los derechos reservados.</p>
+      <p>
+        2026 Oficina de Turismo de Winterfell - Casa Stark. Todos los derechos
+        reservados.
+      </p>
     </footer>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
