@@ -1,136 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*Contenedores: body, nava, heder, a, etc. Todos son contenedores distintos.*/
 
 body {
-    
-    font-family:'Domine', serif;
-    font-size: 16px;
-    /* font family es para definir la fuente que voy a tener
+  font-family: "Domine", serif;
+  font-size: 16px;
+  /* font family es para definir la fuente que voy a tener
         font size es el tamaño. Todo lo escrito en el body se reflejo en el cuerpo*/
-    line-height: 1.6;
-    /* line height Es el interlineado*/
-    background-color: #2c2f33;
-    /*Modificacion del color del fondo.*/
+  line-height: 1.5;
+  /* line height Es el interlineado*/
+  background-color: #2c2f33;
+  /*Modificacion del color del fondo.*/
 
-    color: #e0e0e0;
-    /*con solo escribir "color" se sabe que modifica el color de la fuente de toda la pagina.*/
+  color: #e0e0e0;
+  /*con solo escribir "color" se sabe que modifica el color de la fuente de toda la pagina.*/
 
-    margin: 3rem;
-    /*el margen por lo general es segun cantidad de rem o pixeles- preguntar al profe para centralizar imagenes.*/
-    padding: 2rem;
+  margin: 3rem;
+  /*el margen por lo general es segun cantidad de rem o pixeles- preguntar al profe para centralizar imagenes.*/
+  padding: 2rem;
 }
 
 header {
-    background-color: #1a1c1e; /*Color de fondo*/
-    color: #e6e5e3; /* Color de la letra*/
-    padding: 2rem ;
-    text-align: center;
-    border-bottom: 2px ; /*Borde inferior para separar*/
-    display: flex; /*flexbox para centrar*/
-    flex-direction: column; /*Elem verticales*/
-    align-items: center; /*Centrar pero de forma horizontal*/
-    gap: 1,5rem; /*Espacio entre los titulos, sub, etc.*/
-
+  background-color: #1a1c1e; /*Color de fondo*/
+  color: #e6e5e3; /* Color de la letra*/
+  padding: 2rem;
+  text-align: center;
+  border-bottom: solid #5a6067 15px; /*Borde inferior para separar*/
+  display: flex; /*flexbox para centrar*/
+  flex-direction: column; /*Elem verticales*/
+  align-items: center; /*Centrar pero de forma horizontal*/
+  gap: 1, 3rem; /*Espacio entre los titulos, sub, etc.*/
 }
 
 header h1 {
-    font-size: 3rem; /*Agrandar titulo*/
-    font-weight: bold;  /*Negrita*/
+  font-size: 3rem; /*Agrandar titulo*/
+  font-weight: bold; /*Negrita*/
 }
 
 header p {
-    font-style: italic;
-    font-size: 1,2rem;
+  font-style: italic;
+  font-size: 1, 2rem;
 }
-nav ul{
-    display: flex;  /* display - Lo convierte en un contenedor flexible (que va a poder cambiar de posicion) */
-    gap: 2rem; /* gap - es la separacion que puede haber entre un contenedor (li)y otro contenedor.*/
-    flex-direction: row; /* flex-direction - direccion que va a tener (fila, columna, etc)*/
-    justify-content:center; /*justify-content - la posicion (si se encuentra a la iz, der, centrado)*/
-    list-style: none; /*list-style - le saca el puntito a la lista.*/
+
+header .nav-link {
+  color: #e6e5e3;
+  border: solid #3e4248;
+}
+navbar {
+  background-color: rgb(11, 11, 12);
+}
+
+nav ul {
+  display: flex; /* display - Lo convierte en un contenedor flexible (que va a poder cambiar de posicion) */
+  gap: 2rem; /* gap - es la separacion que puede haber entre un contenedor (li)y otro contenedor.*/
+  flex-direction: row; /* flex-direction - direccion que va a tener (fila, columna, etc)*/
+  justify-content: center; /*justify-content - la posicion (si se encuentra a la iz, der, centrado)*/
+  list-style: none; /*list-style - le saca el puntito a la lista.*/
 }
 
 header nav a {
-    text-decoration: none; /*Quitar subrayado*/
-    color: #e0e0e0;
-    border: 1px solid #555; /*Borde del boton*/
-    padding: 10px 20px;
-    border-radius: 5px; /*Bordes rodeados*/
-    font-weight: bold;
+  text-decoration: none; /*Quitar subrayado*/
+  color: #e0e0e0;
+  border: 1px solid #555; /*Borde del boton*/
+  padding: 10px 20px;
+  border-radius: 5px; /*Bordes rodeados*/
+  font-weight: bold;
+  background-color: rgb(11, 11, 12);
 }
 
 header nav a:hover {
-    background-color: #5a6067; /*Fondo del boton*/
+  background-color: #71767c; /*Fondo del boton*/
 }
 
 main {
-    max-width: 1200px; /*Para el ancho del contenido principal*/
-    margin: 0,4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-
+  max-width: 1200px; /*Para el ancho del contenido principal*/
+  margin: 0, 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 section {
-    background-color: #1a1c1e;
-    padding: 3rem;
-    border: 1px solid #444; 
-    border-radius: 8px;
+  background-color: #1a1c1e;
+  padding: 3rem;
+  border: 1px solid #444;
+  border-radius: 8px;
 }
 
 section h2 {
-    font-size: 2em;
-    border-bottom: 2px solid #f0dca2;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-
+  font-size: 2em;
+  border-bottom: 2px solid #f0dca2;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #Presentación p {
-    line-height: 1.8;
-    /*No se muy bien como se usan los #*/
+  line-height: 1.8;
+  /*No se muy bien como se usan los #*/
 }
 
-#Presentación img { /*Preguntar al profe*/
-    max-width: 100%; /*Adaptar la imagen*/
-    height: auto;
-    border-radius: 10px;
+#Presentación img {
+  /*Preguntar al profe*/
+  max-width: 100%; /*Adaptar la imagen*/
+  height: auto;
+  border-radius: 10px;
 }
 
-#lugares-destacados article {
-    background-color: #3e4248;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    gap: 1,5rem;
+#lugares-destacados div article {
+  background-color: #b2b3b4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1, 5rem;
+}
+
+#lugares-destacados div {
+  display: flex; /* Pone las tarjetas en fila, una al lado de la otra */
+  justify-content: center; /* Las centra horizontalmente en la pantalla */
+  gap: 20px; /* Espacio de separación entre cada tarjeta */
+  flex-wrap: wrap; /* Permite que bajen en pantallas pequeñas (celulares) */
+}
+
+.card img {
+  height: 250px;
+  max-width: 400px;
 }
 
 #lugares-destacados img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #agenda-cultural h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 #agenda-cultural aside {
-    padding: 2rem;
-    background-color: #3e4248;
-    border-radius: 0,5rem;
+  padding: 2rem;
+  background-color: #3e4248;
+  border-radius: 0, 5rem;
 }
 
 footer {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
-
