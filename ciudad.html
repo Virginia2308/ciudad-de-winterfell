@@ -1,102 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciudad de Winterfell - La Ciudad</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
     <header>
-        <h1>Bienvenido a Winterfell</h1>
-        <p>Capital ancestral del Norte y hogar de la Casa Stark</p>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="ciudad.html">La Ciudad</a>
-                </li>
-                <li>
-                    <a href="lugares.html">Lugares de Interés</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto y Turismo</a>
-                </li>
+      <h1>Bienvenido a Winterfell</h1>
+      <p>Capital ancestral del Norte y hogar de la Casa Stark</p>
+      <nav class="navbar navbar-expand bg-1">
+        <div class="container-fluid">
+          <div class="nav-overflow" data-bs-toggle="nav-overflow">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ciudad.html">La Ciudad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lugares.html">Lugares de Interes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html"
+                  >Contacto y Turismo</a
+                >
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <hr>
-
     <main>
+      <div class="historia-principal">
         <section id="historia">
-            <h2>Historia y Fundamentos de la Ciudad</h2>
-            <p>
-                Según la leyenda, Winterfell fue construida hace más de ocho mil años por Brandon el Constructor, 
-                quien también erigió el Muro con la ayuda de los Primeros Hombres y los Gigantes.
-                A lo largo de los milenios, ha resistido invasiones, inviernos inclemente y guerras de reyes, 
-                manteniéndose como el núcleo defensivo y social indispensable para la supervivencia de los habitantes del Norte.
-            </p>
-            <img src="img/ciudad-winterfell.jpg" alt="Antigua ilustración de Winterfell" width="800" height="400" loading="lazy">
+          <div class="card w-100 mb-3">
+            <div class="card-body">
+              <h4 class="card-title">Historia e Identidad</h4>
+              <p class="card-text">
+                Winterfell fue fundada hace mas de ocho mil años durante la Era
+                de los Héroes por Brandon el Constructor, primer Rey del
+                Invierno y ancestro de la Casa Stark. La fortaleza y la urbe que
+                la rodea surgieron tras la finalización de la Larga Noche como
+                un baluarte inexpugnable para proteger a los reinos de los
+                hombres contra las amenazas del Norte. Su identidad esta
+                profundamente ligada al honor, al deber, la sobriedad y la
+                resistencia; sus habitantes entienden que la supervivencia exige
+                unidad, preparación constante y el fiel cumplimiento del lema
+                ancestral de la casa gobernante:
+                <strong>"Se acerca el invierno".</strong>
+              </p>
+              <img
+                src="./img/ciudad-winterfell.jpg"
+                alt="vista de la ciudad desde el cierlo"
+              />
+              <a href="#" class="btn-solid theme-primary">Leer mas..</a>
+            </div>
+          </div>
         </section>
+      </div>
+      <section id="zonas-principales">
+        <h2>Barrios y Zonas Principales</h2>
+        <div class="accordion my-4" id="acordeonWinterfell">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="encabezadoUno">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelUno"
+                aria-expanded="true"
+                aria-controls="panelUno"
+              >
+                La Ciudad de Invierno (Winter Town):
+              </button>
+            </h3>
+            <div
+              id="panelUno"
+              class="accordion-collapse collapse show"
+              aria-labelledby="encabezadoUno"
+              data-bs-parent="#acordeonWinterfell"
+            >
+              <div class="accordion-body">
+                Gran asentamiento ubicado justo afuera de las murallas
+                principales. Permanece casi deshabitado durante los meses de
+                verano, pero se transforma en una bulliciosa metrópoli en
+                invierno, cuando miles de aldeanos, granjeros y familias del
+                Norte migran hacia las murallas para buscar refugio, calor y
+                alimento. subterráneas.
+              </div>
+            </div>
+          </div>
 
-        <hr>
-
-        <section id="caracteristicas">
-            <h2>Geografía y Arquitectura</h2>
-            <p>
-                La ciudadela está estratégicamente edificada sobre un complejo sistema de aguas termales subterráneas.
-                Estas aguas son canalizadas a través de las tuberías de las paredes de piedra, manteniendo las estancias cálidas 
-                incluso durante los peores inviernos.
-            </p>
-
-            <article>
-                <h3>Las Dobles Murallas</h3>
-                <p>
-                    La fortaleza está protegida por dos murallas masivas de granito sepultura: la muralla exterior de 80 pies de altura
-                    y la interior de 100 pies, rodeadas por un foso profundo.
-                </p>
-                <img src="img/murallas.jpg" alt="Castillo con murallas" width="400" height="200" loading="lazy">
-            </article>
-
-            <article>
-                <h3>Winter Town (La Ciudad de Invierno)</h3>
-                <p>
-                    Fuera de los muros se extiende un asentamiento comunal. Durante el verano permanece casi desierto, 
-                    pero cuando se acerca el invierno, miles de campesinos de todo el Norte migran hacia él buscando refugio y calor.
-                </p>
-                <img src="img/winter-town.jpg" alt="Winter Town" width="400" height="200" loading="lazy">
-            </article>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="encabezadoDos">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelDos"
+                aria-expanded="false"
+                aria-controls="panelDos"
+              >
+                La Ciudadela Exterior:
+              </button>
+            </h3>
+            <div
+              id="panelDos"
+              class="accordion-collapse collapse"
+              aria-labelledby="encabezadoDos"
+              data-bs-parent="#acordeonWinterfell"
+            >
+              <div class="accordion-body">
+                Zona fortificada comprendida entre el foso y la muralla
+                exterior. Alberga las caballerizas, los establos, los almacenes
+                de víveres, las herraderías y las viviendas del personal de
+                guardia y artesanos permanentes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="encabezadoDos">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelDos"
+                aria-expanded="false"
+                aria-controls="panelDos"
+              >
+                El Núcleo Ancestral:
+              </button>
+            </h3>
+            <div
+              id="panelDos"
+              class="accordion-collapse collapse"
+              aria-labelledby="encabezadoDos"
+              data-bs-parent="#acordeonWinterfell"
+            >
+              <div class="accordion-body">
+                La sección más antigua e interior del complejo, construida
+                alrededor de la Torre Rota y los baños térmicos. Es el centro
+                administrativo y político desde donde la Casa Stark gobierna el
+                Norte.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="costumbres">
+        <section id="historia">
+          <h2>Costumbres y Tradiciones</h2>
+          <div class="card w-100 mb-3">
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <p class="card-text">
+                La cultura de los habitantes de Winterfell está marcada por la
+                geografía implacable del Norte y la herencia de los Primeros
+                Hombres. Destaca su devoción por los Antiguos Dioses, cuyos
+                rostros tallados en los árboles corazón son venerados en
+                silencio y sin templos ni sacerdotes. Mantienen como norma
+                sagrada las leyes de la hospitalidad —donde compartir el pan y
+                la sal garantiza la protección mutua entre anfitrión y huésped—
+                y la convicción de que "el hombre que dicta la sentencia debe
+                blandir la espada", haciendo de la justicia un acto directo,
+                personal y responsable.
+              </p>
+              <img
+                src="./img/ciudad-winterfell.jpg"
+                alt="vista de la ciudad desde el cierlo"
+              />
+            </div>
+          </div>
         </section>
+      </div>
+      <section id="agenda-cultural">
+        <h2>Ficha Técnica y Datos Clave</h2>
 
-        <hr>
-
-        <section id="economia-sociedad">
-            <h2>Economía, Gobierno y Sociedad</h2>
-            <p>
-                Como centro administrativo del Norte, Winterfell coordina el comercio de pieles, madera, hierro y alimentos almacenados.
-            </p>
-            
-            <ul>
-                <li><strong>Gobierno:</strong> Dirigido por el Guardián del Norte y Señor de Winterfell.</li>
-                <li><strong>Moneda y Comercio:</strong> Intercambio directo con casas vasallas y mercaderes de Puerto Blanco (White Harbor).</li>
-                <li><strong>Defensa:</strong> La Guardia de la Ciudad y la guarnición principal garantizan el orden público y la protección de los caminos del rey.</li>
-            </ul>
-        </section>
+        <aside>
+          <ul>
+            <li>
+              <strong>Año de Fundación:</strong>Era de los Héroes (hace aprox.
+              8,000 años por Brandon el Constructor).
+            </li>
+            <li><strong>Casa Gobernante:</strong>Casa Stark de Winterfell.</li>
+            <li><strong>Gentilicio:</strong>Norteño / Norteña.</li>
+            <li>
+              <strong>​Población Ficticia:</strong>15,000 habitantes permanentes
+              (supera los 50,000 durante los inviernos prolongados).
+            </li>
+            <li>
+              <strong>Clima:</strong>Subártico con nevadas estacionales en
+              verano y temperaturas bajo cero permanentes en invierno.
+            </li>
+            <li>
+              <strong>Lema:</strong>"Winter is Coming" (Se acerca el invierno).
+            </li>
+            <li>
+              <strong>Escudo e Insignia:</strong>Un lobo huargo de gris
+              corriendo sobre un campo de blanco nieve.
+            </li>
+          </ul>
+        </aside>
+      </section>
     </main>
 
-    <hr>
+    <hr />
 
     <footer>
-        <address>
-            <small>© 2026 Oficina de Turismo de Winterfell - Casa Stark. Todos los derechos reservados.</small>
-        </address>
+      <p>
+        2026 Oficina de Turismo de Winterfell - Casa Stark. Todos los derechos
+        reservados.
+      </p>
     </footer>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
