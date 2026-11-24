@@ -137,6 +137,10 @@ section h2 {
   flex-wrap: wrap; /* Permite que bajen en pantallas pequeñas (celulares) */
 }
 
+#historia div {
+  background-color: #b2b3b4;
+}
+
 .card img {
   height: 250px;
   max-width: 400px;
@@ -157,6 +161,13 @@ section h2 {
   border-radius: 0, 5rem;
 }
 
+#zonas-principales div button {
+  background-color: #5a6067;
+  color: #e0d8d8;
+}
+#zonas-principales {
+  border-color: #1a1c1e;
+}
 footer {
   font-size: 1rem;
   text-align: center;
